@@ -1,0 +1,104 @@
+footer{
+    .top{
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        padding-bottom: 60px;
+        .logo{
+            width: 250px;
+            .image{
+                width: 125px;
+                height: 25px;
+                margin-bottom: 25px;
+            }
+            p{
+                color: #677071;
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            h3{
+                margin-bottom: 16px;
+            }
+        }
+        h3{
+            margin-bottom: 40px;
+            color: #021112;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        a{
+            color: #021112;
+            font-size: 1em;
+        }
+        .right{
+            width: 250px;
+            p{
+                color: #021112;
+                margin-bottom: 30px;
+            }
+            .icons{
+                display: flex;
+                gap: 18px;
+                i{
+                    font-size: 18px;
+                    color: #C8F3F9;
+                    width: 34px;
+                    height: 34px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                    border: 1px solid #C8F3F9;
+                    transition: 0.3s ease-out;
+                    &:hover{
+                        color:  #13A6BA;
+                        border: 1px solid  #13A6BA;
+                    }
+                }
+            }
+        }
+        @media(max-width:918px){
+            flex-wrap: wrap;
+            gap: 20px;
+            row-gap: 60px;
+            .logo{
+                order: 1;
+            }
+            .right{
+                order: 2;
+            }
+            ul{
+                order: 3;
+                width: 30%;
+            }
+        }
+        @media(max-width:580px){
+            flex-direction: column;
+            align-items: center;
+            gap: 45px;
+            text-align: center;
+            .image{
+                margin: auto;
+                margin-bottom: 25px;
+            }
+            .icons{
+                justify-content: center;
+            }
+        }
+    }
+    .bottom{
+        padding: 20px;
+        border-top: 1px solid #E0E2E3;
+        text-align: center;
+        a{
+            color: #677071;
+            font-size: 1em;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}

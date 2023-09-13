@@ -1,0 +1,100 @@
+.properties{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 100px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        top: -200px;
+        border-radius: 50%;
+        background-color: #FEECEB;
+        z-index: -1;
+    }
+    .bg-image{
+        width: 500px;
+        height: 580px;
+        position: relative;
+        .abc{
+            position: absolute;
+            width: 320px;
+            height: 180px;
+            bottom: 0px;
+            left: -100px;
+        }
+    }
+    .cart{
+        width: 460px;
+        h2{
+            color: #021112;
+            font-weight: 700;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+            h3{
+                color: #021112;
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #677071;
+            }
+        }
+        .image{
+            width: 80px;
+            height: 80px;
+            background-color: #FBFCED;
+            border-radius: 8px;
+        }
+    }
+    @media(max-width: 1189px){
+        gap: 40px;
+    }
+    @media(max-width: 1024px){
+        gap: 70px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media(max-width: 660px){
+        &::before{
+            width: 200px;
+            height: 200px;
+            left: -100px;
+            top: -100px;
+        }
+        .bg-image{
+            width: 90%;
+            height: 90vw;
+            .abc{
+                width: 300px;
+                height: 160px;
+                left: -60px;
+            }
+        }
+    }
+    @media(max-width: 420px){
+        .bg-image{
+            width: 95%;
+            height: 95vw;
+            .abc{
+                width: 200px;
+                height: 110px;
+                left: -40px;
+            }
+        }
+        .cart{
+            width: 100%;
+            .box{
+                gap: 8px;
+            }
+        }
+    }
+}
